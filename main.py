@@ -50,7 +50,7 @@ if uploaded_image is not None:
 
 
 
-    model_final = keras.models.load_model('https://github.com/gillPrince7/trafficSignClassifier/blob/main/aug_model_1.h5')
+    model_final = keras.models.load_model('aug_model_1.h5')
     st.write(model_final.summary())
     # Load and preprocess your image (img) here
 
