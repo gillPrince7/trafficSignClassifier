@@ -51,7 +51,7 @@ if uploaded_image is not None:
 
 
     model_final = keras.models.load_model('class_model.h5')
-    st.write(model_final.summary())
+    
     # Load and preprocess your image (img) here
 
     # Make predictions
@@ -59,7 +59,7 @@ if uploaded_image is not None:
     predictions = model_final.predict(img)
     class_index = np.argmax(predictions)
 
-    st.write(class_index)
+    
     pred_class = pred_class[class_index]
     probability = predictions[0][class_index] * 100  # Convert to percentage
 
