@@ -51,7 +51,7 @@ if uploaded_image is not None:
 
 
     model_final = keras.models.load_model('model_main.h5')
-    #model_final.summary()
+    st.write(model_final.summary())
     # Load and preprocess your image (img) here
 
     # Make predictions
