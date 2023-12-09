@@ -45,11 +45,12 @@ if uploaded_image is not None:
         'School zone',
         'Speed limit sign',
         'stop photos',
-        'yield sign']
+        'yield sign',
+        'miscellaneous']
 
 
 
-    model_final = keras.models.load_model('D:\\Project\\TrafficSign\\Models\\model2.h5')
+    model_final = keras.models.load_model('D:\\Project\\TrafficSign\\Models\\aug_model_1.h5')
     #model_final.summary()
     # Load and preprocess your image (img) here
 
